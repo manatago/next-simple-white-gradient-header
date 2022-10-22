@@ -3,6 +3,10 @@ import React from 'react';
 const NextSimpleWhiteGradientHeader = (props) => {
     const defaultRotate = '90deg';
     const defaultGradientColor = '#FFFFFF';
+    //タグ名を自由に指定できる。
+    //とりあえず初期値はheader
+    const TagName = props.as || 'header';
+
     const headerStyle = {
         backgroundImage: 'url('+props.backgroundImagePath+')',
         height: props.height ? props.height : '400px',
@@ -22,11 +26,11 @@ const NextSimpleWhiteGradientHeader = (props) => {
             + (props.gradientEndOpacity? props.gradientEndOpacity : '00') +' 100%)'
     }
     return(
-    <header style={headerStyle} className="nextSimpleWhiteGradientHeader">
+    <TagName style={headerStyle} className="nextSimpleWhiteGradientHeader">
         <div style={wrapperStyle} className="nextSimpleWhiteGradientHeaderWraper">
             {props.children}
         </div>
-    </header>
+    </TagName>
     )
 };
 export default NextSimpleWhiteGradientHeader;
