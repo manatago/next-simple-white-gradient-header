@@ -1,12 +1,18 @@
 import React from 'react';
-import './styles.css';
+
 const NextSimpleWhiteGradientHeader = (props) => {
     const defaultRotate = '90deg';
     const defaultGradientColor = '#FFFFFF';
     const headerStyle = {
-        backgroundImage: 'url('+props.backgroundImagePath+')'
+        backgroundImage: 'url('+props.backgroundImagePath+')',
+        height: props.height ? props.height : '400px',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
     }
     const wrapperStyle = {
+        width: '100%',
+        height: '100%',
         background: 'linear-gradient('
             + (props.gradientRotate ? props.gradientRotate : defaultRotate)
             +','
