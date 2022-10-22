@@ -12,7 +12,7 @@ import NextSimpleWhiteGradientHeader from '@tagosan/next-simple-white-gradient-h
 ```
 こんな感じでコンポーネントを読み込みます。
 
-##　パラメーター
+## パラメーター
 ### backgroundImagePath
 背景画像のパスです。これだけは必須です。
 
