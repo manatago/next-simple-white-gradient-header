@@ -1,15 +1,16 @@
 {
-  "name": "next-simple-white-gradient-header",
+  "name": "@tagosan/next-simple-white-gradient-header",
   "version": "1.0.0",
   "description": "This package is for simple header for nextjs",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "transpile": "babel src -d dist --copy-files",
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d examples/dist",
-    "publish-demo": "npm run build && npm run deploy"
+    "publish-demo": "npm run build && npm run deploy",
+    "prepublishOnly": "npm run transpile"
   },
   "repository": {
     "type": "git",
