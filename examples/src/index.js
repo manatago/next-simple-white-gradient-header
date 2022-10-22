@@ -8,6 +8,8 @@ const App = () => <NextSimpleWhiteGradientHeader
                     gradientColor="#FFFFFF"
                     gradientStartOpacity="FF"
                     gradinetEndOpacity="00"
+                    style={{height: '400px'}}
                 >
+                    <h1>NextSimpleWhiteGradientHeader</h1>
                 </NextSimpleWhiteGradientHeader>;
 render(<App />, document.getElementById('root'));

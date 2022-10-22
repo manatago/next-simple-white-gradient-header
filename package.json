@@ -1,6 +1,6 @@
 {
   "name": "@tagosan/next-simple-white-gradient-header",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This package is for simple header for nextjs",
   "main": "dist/index.js",
   "scripts": {

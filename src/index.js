@@ -9,11 +9,12 @@ const NextSimpleWhiteGradientHeader = (props) => {
 
     const headerStyle = {
         backgroundImage: 'url('+props.backgroundImagePath+')',
-        height: props.height ? props.height : '400px',
+        height: props.height ? props.height : 'auto',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     }
+    
     const wrapperStyle = {
         width: '100%',
         height: '100%',
@@ -26,7 +27,7 @@ const NextSimpleWhiteGradientHeader = (props) => {
             + (props.gradientEndOpacity? props.gradientEndOpacity : '00') +' 100%)'
     }
     return(
-    <TagName style={headerStyle} className="nextSimpleWhiteGradientHeader">
+    <TagName style={Object.assign(headerStyle,props.style)} className="nextSimpleWhiteGradientHeader">
         <div style={wrapperStyle} className="nextSimpleWhiteGradientHeaderWraper">
             {props.children}
         </div>
